@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="template_styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animations.css">
+	  <!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Иконка сайта для устройств от Apple, рекомендуемый размер 114x114, прозрачность не поддерживается -->
+  <link rel="apple-touch-icon" href="favicon.png" />
+  
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+	
+	</header><!-- .header-->
+
+	<main class="content">
+	<div class="studio_all">
+	<div class="up">
+	<div class="dark_blue" id="up_element">
+		<a href="#"><img src="images/video.png"></a>
+		<h2>Motion design</h2>
+		<a href="#"><h3>md.uvion.ru</h3></a>
+	</div>
+	<div class="pink" id="up_element1">
+	<a href="#"><img src="images/web.png"></a>
+	<h2>WEB-разработка</h2>
+	<a href="#"><h3>web.uvion.ru</h3></a>
+	</div>
+
+	<div class="yellow" id="up_element2">
+	<a href="#"><img src="images/3d.png"></a>
+	<h2>3D моделирование</h2>
+	<a href="#"><h3>3d.uvion.ru</h3></a>
+	</div>
+	</div>
+	<div class="logo_studio" id="logo_studio">
+		<img src="images/logo_studio.png">
+	</div>
+	<div class="down">
+			<div class="green" id="down_element2">
+	<a href="#"><img src="images/prog.png"></a>
+	<h2>Программирование</h2>
+	<a href="#"><h3>prog.uvion.ru</h3></a>
+	</div>
+
+		<div class="blue" id="down_element1">
+	<a href="#"><img src="images/design.png"></a>
+	<h2>Дизайн</h2>
+	<a href="#"><h3>design.uvion.ru</h3></a>
+	</div>
+
+		<div class="red" id="down_element">
+	<a href="#"><img src="images/ing.png"></a>
+	<h2>Инженерия</h2>
+	<a href="#"><h3>eng.uvion.ru</h3></a>
+	</div>
+	</div>
+		
+	</div>
+	</main><!-- .content -->
+
+	<footer class="footer">
+	
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+<script>
+	$(window).ready(function() {
+		$('#logo_studio').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+
+	$(window).ready(function() {
+		$('#up_element').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+
+	$(window).ready(function() {
+		$('#up_element1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideDown");
+			}
+		});
+	});
+
+	$(window).ready(function() {
+		$('#up_element2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+
+
+	$(window).ready(function() {
+		$('#down_element1').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos > topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+
+		$(window).ready(function() {
+		$('#down_element2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+
+		$(window).ready(function() {
+		$('#down_element').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+
+
+</script>
+</body>
+</html>

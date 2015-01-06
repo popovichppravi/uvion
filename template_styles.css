@@ -1,0 +1,216 @@
+/*  -------------------------------------------------
+  Нестандартные шрифты
+  ------------------------------------------------- */
+@charset "UTF-8";
+@font-face {
+  font-family: 'NeoSans';
+  src: url("fonts/neosanscyrregular.woff") format("woff"), url("fonts/neosanscyrregular.ttf") format("truetype"), url("fonts/neosanscyrregular.svg#neosanscyrregular") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url("fonts/neosanscyrmedium.woff") format("woff"), url("fonts/neosanscyrmedium.ttf") format("truetype"), url("fonts/neosanscyrmedium.svg#neosanscyrmedium") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	 font: 16px/19px 'NeoSans', sans-serif;
+	 color: #555555;
+	 width: 100%;
+	 background: #ECECED;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;	
+	background: #ECECED;
+}
+
+.studio_all .up img, .studio_all .down img
+{
+	width: 50px;
+	height: 50px;
+}
+
+.studio_all .up .pink
+{
+	background: #FF6F6F;
+	left: 200px;
+	top: 0;
+}
+.studio_all .up .dark_blue
+{
+	background: #48647C;
+	left: 0;
+	top: 100px;
+
+}
+
+.studio_all .up .yellow
+{
+	background: #F8C82D;
+	right: 0;
+	top: 100px;
+
+}
+
+.studio_all .down .green
+{
+	background: #0DCCC0;
+	right: 0;
+	bottom: 100px;
+}
+
+.studio_all .down .blue
+{
+	background: #2980B9;
+	left: 200px;
+	bottom: 0;
+}
+
+.studio_all .down .red
+{
+	background: #B23F73;
+	left: 0;
+	bottom: 100px;
+}
+
+.studio_all .up div, .studio_all .down div
+{
+	display: inline-block;
+	padding: 28px 30px;
+	border-radius: 160px; 
+	margin: 0 40px;
+	position: absolute;
+}
+.logo_studio
+{
+	display: inline-block;
+	padding: 0 !important;
+	border-radius: 0 !important; 
+	margin: 70px 0;
+}
+
+.logo_studio img
+{
+	width: 200px !important;
+	height: auto !important;	
+}
+
+.studio_all
+{
+	text-align: center;
+	position: relative;
+width: 600px;
+height: 490px;
+position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-top: -255px;
+   margin-left: -300px;
+}
+.up, .down
+{
+	position: relative;
+	width: 600px;
+	height: 120px;
+	display: block;
+}
+
+.up h2, .down h2
+{
+position: absolute;
+display: inline-block;
+width: 200px;
+left: -40%;
+top: 101%;
+text-transform: uppercase;
+font-size: 14px;
+}
+.up h3, .down h3
+{
+position: absolute;
+display: inline-block;
+width: 200px;
+left: -40%;
+top: 132px;
+font-size: 13px;
+}
+
+.up a, .down a
+{
+color: #1196BA; 
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	
+
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	 
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	
+	
+}
